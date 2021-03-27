@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--  ThymeLeaf - Assists in storing info to database -->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+	href="https://fonts.googleapis.com/css2?family=Chango&family=Dancing+Script&family=Kiwi+Maru:wght@300&family=PT+Sans&display=swap"
+	rel="stylesheet">
+<title>Penguin Pizza</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<div class="top">
+		<img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite">
+
+
+		<h1>
+			Welcome to <br>Penguin Pizza!
+		</h1>
+		<h3>
+			Order a pizza now!
+		</h3>
+		<br>
+	</div>
+	<p>Fill out your delivery instructions below:</p>
+<br>
+	<img class="penguinlogo"
+		src="https://i.pinimg.com/originals/3a/1f/2b/3a1f2bc266263c574d11d50353ab41c7.jpg"
+		alt="Penguin Pizza Logo">
+
+	<form>
+	<label>What size pizza?</label> <br>
+	<label>Small</label><input type = "checkbox"/><label>Medium</label><input type = "checkbox"/><label>Large:</label><input type = "checkbox"/>
+	<br>
+	<br>
+		<label>What would you like on your pizza?</label> <br>
+		<label>Pepperoni:</label>
+		<input type="checkbox"/> <br>
+		<label>Sausage:</label>
+		<input type="checkbox"/> <br>
+		<label>Bacon:</label>
+		<input type="checkbox"/> <br>
+				<label>Chicken:</label>
+		<input type="checkbox"/> <br>
+				<label>Mushrooms:</label>
+		<input type="checkbox"/> <br>
+				<label>Olives:</label>
+		<input type="checkbox"/> <br>
+				<label>Green Peppers:</label>
+		<input type="checkbox"/> <br>
+				<label>Jalapeno Peppers:</label>
+		<input type="checkbox"/> <br>
+	</form>
+<br>
+<br>
+	<form action="#" th:action="@{/}" th:object="${customer}" method="post">
+		<table class="table">
+			<tr>
+				<td>First Name:</td>
+				<td><input type="text" th:field="*{firstName}" /></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><input type="text" th:field="*{lastName}" /></td>
+			</tr>
+			<tr>
+				<td>Address:</td>
+				<td><input type="text" th:field="*{address}" /></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type="text" th:field="*{city}" /></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td><input type="text" th:field="*{state}" /></td>
+			</tr>
+			<tr>
+				<td>Zip:</td>
+				<td><input type="number" th:field="*{zip}" /></td>
+			</tr>
+			<tr>
+				<td>Phone Number:</td>
+				<td><input type="number" th:field="*{phoneNumber}" /></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="email" th:field="*{email}" /></td>
+			</tr>
+			<tr>
+				<td><button type="submit">Have your pizza delivered!</button></td>
+			</tr>
+		</table>
+	</form>
+
+<br>
+<br>
+
+	<div class="bottom">
+		<img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <br> <br> <br>
+
+	</div>
+</body>
+</html>

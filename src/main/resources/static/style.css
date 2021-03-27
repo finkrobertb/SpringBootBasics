@@ -1,0 +1,76 @@
+body {
+	background-color: #edeef7;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Chango', cursive;
+	color: #e4fbff;
+	font-size: 100px;
+	margin: 50px;
+}
+
+h3 {
+	font-family: 'Kiwi Maru', serif;
+	color: #b8b5ff;
+	font-size: 40px;
+}
+
+h4 {
+	font-family: 'Dancing Script', cursive;
+	color: #7868e6;
+	font-size: 80px;
+	margin-bottom: 50px;
+}
+
+p {
+	font-family: 'PT Sans', sans-serif;
+}
+
+.top {
+	background-color: #7868e6;
+	margin-top: 0px;
+}
+
+.bottom {
+	background-color: #7868e6;
+	width: auto;
+	height: auto;
+}
+
+.penguinSprite {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.pizzaSprite {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.penguinlogo {
+	height: 450px;
+	width: 450px;
+	background: transparent;
+	float: left;
+	margin-left: 150px;
+	margin-top: 25px;
+}
+
+.donottip {
+	height: 400px;
+	width: 400px;
+}
+
+.table {
+	margin-left: auto;
+	margin-right: auto;
+}

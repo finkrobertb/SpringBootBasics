@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Thanks for Ordering!</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link
+	href="https://fonts.googleapis.com/css2?family=Chango&family=Dancing+Script&family=Kiwi+Maru:wght@300&family=PT+Sans&display=swap"
+	rel="stylesheet">
+</head>
+<body>
+	<div class="top">
+		<img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite">
+
+
+		<h1>
+			Thanks for ordering <br> Penguin Pizza!
+		</h1>
+		<h3>Your order will get there when it gets there</h3>
+		<br> <br>
+	</div>
+	<h4>Dear Valued Customer...</h4>
+	<p
+		th:text="'Thanks for your order, ' + ${firstName} + ' ' + ${lastName} + '!'" />
+	<p
+		th:text="'It will be delivered to ' + ${address} + ', ' + ${city} + ', ' + ${zip} + ' whenever we feel like it.'" />
+	<p
+		th:text="'We probably will not call you at ' + ${phoneNumber} + ', but we will send spam to ' + ${email} +'.'" />
+			<p> Order again soon! </p>
+		
+	<br>
+	<br>
+	<img class="donottip" src="https://i.redd.it/49w7j34ez7w41.jpg"
+		alt="Do Not Tip :(">
+	<br>
+	<br>
+
+	<div class="bottom">
+		<img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <img class="pizzaSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/slice-of-pizza_1f355.png"
+			alt="Pizza Sprite"> <img class="penguinSprite"
+			src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/penguin_1f427.png"
+			alt="Penguin Sprite"> <br> <br> <br>
+
+	</div>
+</body>
+</html>
